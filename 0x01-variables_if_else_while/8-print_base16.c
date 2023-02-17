@@ -8,10 +8,15 @@
 int main(void)
 {
 	int n;
+	char hex;
 
-	for (n = 0x0 ; (n < 0x10); n++)
+	for (n = '0' ; (n <= '9'); n++)
 	{
-		printf("%d", n);
+		putchar(n);
+	}
+	for (hex = 'a'; hex <= 'f'; hex++)
+	{
+		putchar(hex);
 	}
 	putchar('\n');
 	return (0);
