@@ -18,8 +18,8 @@ int main(void)
 			{
 				for (z = '0'; z <= '9'; z++)
 				{
-					if ((u != y) && (x != z))
-					{
+					/*if ((u != y) && (x != z))*/
+					/*{*/
 					putchar(u);
 					putchar(x);
 					putchar(' ');
@@ -34,7 +34,7 @@ int main(void)
 						putchar(',');
 						putchar(' ');
 					}
-					}
+					/*}*/
 				}
 			}
 		}
