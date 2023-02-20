@@ -16,12 +16,12 @@ int main(void)
 		{
 			for (z = y + '1'; z < '9'; z++)
 			{
-				if (x != y != z)
+				if (x != (y != z))
 				{
 					putchar(x);
 					putchar(y);
 					putchar(z);
-					if (x != '7' && y != '8' && z != '9')
+					if (x != '7' && (y != '8' && z != '9'))
 						putchar(',');
 						putchar(' ');
 
