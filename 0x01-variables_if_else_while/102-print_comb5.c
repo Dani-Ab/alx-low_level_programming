@@ -8,34 +8,22 @@
 
 int main(void)
 {
-	int u, x, y, z;
+	int x = 0, y = 1, xmax = 98, ymax = 99;
 
-	for (u = '0'; u <= '9'; u++)
+	while (x <= xmax) 
 	{
-		for (x = '0'; x <= '9'; x++)
+		y = x + 1;
+		while (y <= ymax)
 		{
-			for (y = '0'; y <= '9'; y++)
+			putchar(x < 9 ? 0 + '0' : (x / 10) + '0');
+			putchar(x < 9 ? x + '0' : (x % 10) + '0');
+			putchar(' ');
+			putchar(y < 9 ? 0 + '0' : (y / 10) + '0');
+			putchar(y < 9 ? y + '0' : (y % 10) + '0');
+			if (x != y)
 			{
-				for (z = '0'; z <= '9'; z++)
-				{
-					/*if ((u != y) && (x != z))*/
-					/*{*/
-					putchar(u);
-					putchar(x);
-					putchar(' ');
-					putchar(y);
-					putchar(z);
-					if ((u == '9' && x == '8') && (y == '9' && z == '9'))
-					{
-						continue;
-					}
-					else
-					{
-						putchar(',');
-						putchar(' ');
-					}
-					/*}*/
-				}
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
