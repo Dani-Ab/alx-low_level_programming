@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- *	main entry printing _putcar with programer header
- *	Return 0 (sucess)
+ * main - Entry point a program that evaluate random number
+ *
+ * Return:always 0 (success)
  */
 
 int main(void)
