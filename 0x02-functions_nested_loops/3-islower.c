@@ -2,7 +2,7 @@
 
 /**
  * _islower - comparing a caracter to c
- * c Parameter comparing  member
+ * @c: Parameter comparing  member
  *
  * Return: 0 (not success)
  */
