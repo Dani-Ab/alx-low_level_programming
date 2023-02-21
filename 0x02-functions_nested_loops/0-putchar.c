@@ -2,7 +2,7 @@
 
 /**
  * main - Entry point a program that evaluate random number
- *
+ * written by Daniel A
  * Return:always 0 (success)
  */
 
