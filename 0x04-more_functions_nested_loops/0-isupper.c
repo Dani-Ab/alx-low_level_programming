@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * _isdigit - check the inputes if its a number or note.
- * @c: input alphabet
+ * _isupper - check the inputes if its uppercase character or note.
+ * @c: input uppercase character
  * Return: Always 0.
  */
-int _isdigit(int c)
+int _isupper(int c)
 {
 	if (isdigit(c))
 	{
