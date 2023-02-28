@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_array : print arrayelements
+ * print_array - print array elements in order
  *
  * @a : array pointer
  * @n : array size
