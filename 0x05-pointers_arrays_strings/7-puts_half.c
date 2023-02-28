@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <string.h>
 #include "main.h"
 
 /**
@@ -8,7 +10,7 @@
 void puts_half(char *str)
 {
 	int n, m, i;
-	char str2[i];
+	char *str2;
 
 	n = strlen(str);
 	m = (n - 1) / 2;
@@ -18,5 +20,4 @@ void puts_half(char *str)
 		m++;
 	}
 	puts(str2);
-	return (0);
 }
