@@ -7,11 +7,14 @@
 
 void print_rev(char *s)
 {
-	int n;
-	int temp;
-	int i;
+	int n, i, temp;
 
-	n--;
+	n = 0;
+	while (*s != '\0')
+	{
+		n++;
+		s++;
+	}
 	for (i = 0;  i < n ; i++)
 	{
 		temp = s[i];
@@ -20,3 +23,4 @@ void print_rev(char *s)
 		n--;
 	}
 }
+
