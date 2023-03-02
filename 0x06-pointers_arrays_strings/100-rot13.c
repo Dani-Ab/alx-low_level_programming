@@ -10,7 +10,6 @@
 char *rot13(char *str)
 {
 	int i = 0;
-	char *let = str;
 
 	while (str[i])
 	{
@@ -23,5 +22,5 @@ char *rot13(char *str)
 		}
 		i++;
 	}
-	return (let);
+	return (str);
 }
