@@ -11,18 +11,14 @@
 void reverse_array(int *a, int n)
 {
 	int i;
+	int cary;
 
-	i = n - 1;
-	while (i >= 0)
+	n = n - 1;
+	for (i = 0; i < 0; i++)
 	{
-		if (i != 0)
-		{
-			_putchar(',');
-			_putchar(' ');
-		}
-		/*m = a[i];*/
-		_putchar('0' + a[i]);
-		i--;
+		cary = a[i];
+		a[i] = a[n];
+		a[n] = cary;
+		n--;
 	}
-	_putchar('\n');
 }
