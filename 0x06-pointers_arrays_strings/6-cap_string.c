@@ -15,7 +15,7 @@ char *cap_string(char *str)
 	while (str[i] != '\0')
 	{
 		cary = str[i];
-		str[i] = toupper(str);
+		str[i] = toupper(cary);
 		i++;
 	}
 	return (str);
