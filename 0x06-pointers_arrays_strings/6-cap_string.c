@@ -9,6 +9,7 @@
 
 char *cap_string(char *str)
 {
+	char *ncp = str;
 	int i = 0;
 	char cary;
 
@@ -18,5 +19,5 @@ char *cap_string(char *str)
 		str[i] = toupper(cary);
 		i++;
 	}
-	return (str);
+	return (ncp);
 }
