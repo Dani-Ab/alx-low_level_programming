@@ -10,6 +10,7 @@
 char *leet(char *str)
 {
 	int i;
+	char *let = str;
 	char a[] = { 'A', 'E', 'L', 'O', 'T' };
 	char n[] = { 4, 3, 1, 0, 7 };
 
@@ -22,5 +23,5 @@ char *leet(char *str)
 		}
 		str++;
 	}
-	return (str);
+	return (let);
 }
