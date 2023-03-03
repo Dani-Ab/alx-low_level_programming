@@ -19,7 +19,7 @@ char *rot13(char *str)
 			str[i] += 13;
 			i++;
 		}
-		if ((str[i] > 'n' && str[i] <= 'z') || (str[i] > 'N' && str[i] <= 'Z'))
+		if ((str[i] >= 'n' && str[i] <= 'z') || (str[i] >= 'N' && str[i] <= 'Z'))
 		{
 			str[i] -= 13;
 		}
