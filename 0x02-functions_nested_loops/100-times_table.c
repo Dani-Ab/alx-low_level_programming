@@ -25,14 +25,42 @@ void print_times_table(int n)
 			for (m = 1 ; m < n; m++)
 			{
 				mult = i * m;
-				_putchar('0' + mult);
+				if (mult <= 9)
+				{
+					_putchar('0' + mult);
+				}
+				else if (mult < 100)
+				{
+					_putchar('0' + (mult / 10));
+					_putchar('0' + (mult % 10));
+				}
+				else
+				{
+					_putchar('0' + ((mult / 10) / 10));
+					_putchar('0' + ((mult / 10) % 10));
+					_putchar('0' + (mult % 10));
+				}
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
 				_putchar(' ');
 			}
 			mult = i * m;
-			_putchar('0' + mult);
+			if (mult <= 9)
+			{
+				_putchar('0' + mult);
+			}
+			else if (mult < 100)
+			{
+				_putchar('0' + (mult / 10));
+				_putchar('0' + (mult % 10));
+			}
+			else
+			{
+				_putchar('0' + ((mult / 10) / 10));
+				_putchar('0' + ((mult / 10) % 10));
+				_putchar('0' + (mult % 10));
+			}
 			_putchar('\n');
 			i++;
 		}
