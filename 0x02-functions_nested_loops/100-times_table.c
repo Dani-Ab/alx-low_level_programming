@@ -15,7 +15,7 @@ void print_times_table(int n)
 
 	while ((n <= 0) || (n < 15))
 	{
-		while (i <= n)
+		while (i < n)
 		{
 			_putchar(0 + '0');
 			_putchar(',');
@@ -28,21 +28,24 @@ void print_times_table(int n)
 				if (mult <= 9)
 				{
 					_putchar('0' + mult);
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
 				}
 				else if (mult < 100)
 				{
 					_putchar('0' + (mult / 10));
 					_putchar('0' + (mult % 10));
+					_putchar(',');
+					_putchar(' ');
 				}
 				else
 				{
 					_putchar('0' + ((mult / 10) / 10));
 					_putchar('0' + ((mult / 10) % 10));
 					_putchar('0' + (mult % 10));
+					_putchar(',');
 				}
-				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
 				_putchar(' ');
 			}
 			mult = i * m;
@@ -63,6 +66,10 @@ void print_times_table(int n)
 			}
 			_putchar('\n');
 			i++;
+		}
+		if (n == 0)
+		{
+			_putchar('0' + 0);
 		}
 	}
 }
