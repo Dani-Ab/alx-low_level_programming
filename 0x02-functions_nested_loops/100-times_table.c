@@ -13,9 +13,9 @@ void print_times_table(int n)
 	int m = 0;
 	int mult;
 
-	while ((n <= 0) || (n < 15))
+	while ((n >= 0) || (n < 15))
 	{
-		while (i < n)
+		while (i <= n && (n != 0))
 		{
 			_putchar(0 + '0');
 			_putchar(',');
