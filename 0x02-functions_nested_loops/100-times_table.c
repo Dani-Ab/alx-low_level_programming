@@ -12,27 +12,28 @@ void print_times_table(int n)
 	int i = 0;
 	int m = 0;
 	int mult;
-
-	mult = i * m;
-	while(n >= 0 || n <= 15  )
+	
+	while((0 <= n) || (n < 15)  )
 	{
 		while (i <= n)
 		{
 			_putchar(0 + '0');
 			_putchar(',');
 			_putchar(' ');
-		for (m = 1 ; m < n; m++)
-		{
-			_putchar('0' + mult);
-			_putchar(',');
-			_putchar(' ');
+			for (m = 1 ; m < n; m++)
+			{
+				mult = i * m;
+				_putchar('0' + mult);
+				_putchar(',');
+				_putchar(' ');
+			}
+			while (m == n)
+			{
+				mult = i * m;
+				_putchar('0' + mult);
+			}
+			_putchar('\n');
+			i++;
 		}
-		while (m == n)
-		{
-			_putchar('0' + mult);
-		}
-		_putchar('\n');
-		}
-		i++;
 	}
 }
