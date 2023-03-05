@@ -10,7 +10,7 @@
 void print_times_table(int n)
 {
 	int i = 0;
-	int m;
+	int m = 0;
 	int mult;
 
 	mult = i * m;
@@ -25,7 +25,7 @@ void print_times_table(int n)
 			_putchar(',');
 			_putchar(' ');
 		}
-		while (m = n)
+		while (m == n)
 		{
 			_putchar('0' + mult);
 		}
