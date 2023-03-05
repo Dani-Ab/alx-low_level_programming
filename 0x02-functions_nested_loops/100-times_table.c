@@ -14,11 +14,13 @@ void print_times_table(int n)
 	int mult;
 
 	mult = i * m;
-	while (i <= n)
+	while(n >= 0 || n <= 15  )
 	{
-		_putchar(0 + '0');
-		_putchar(',');
-		_putchar(' ');
+		while (i <= n)
+		{
+			_putchar(0 + '0');
+			_putchar(',');
+			_putchar(' ');
 		for (m = 1 ; m < n; m++)
 		{
 			_putchar('0' + mult);
@@ -30,6 +32,7 @@ void print_times_table(int n)
 			_putchar('0' + mult);
 		}
 		_putchar('\n');
+		}
+		i++;
 	}
-	i++;
 }
