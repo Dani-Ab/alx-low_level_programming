@@ -10,10 +10,10 @@
 void print_times_table(int n)
 {
 	int i;
-	int m = 0;
+	int m;
 	int mult;
 
-	while ((n >= 0) || (n < 15))
+	while (((n >= 0) || (n < 15)) && m == n)
 	{
 		for (i = 0; i <= n; i++)
 		{
