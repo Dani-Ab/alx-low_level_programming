@@ -27,11 +27,8 @@ void print_times_table(int n)
 				_putchar(',');
 				_putchar(' ');
 			}
-			while (m == n)
-			{
-				mult = i * m;
-				_putchar('0' + mult);
-			}
+			mult = i * m;
+			_putchar('0' + mult);
 			_putchar('\n');
 			i++;
 		}
