@@ -2,9 +2,9 @@
 
 /**
  * print_times_table - prints the n times table
+ * @n : input n
  *
- * @n - input n
- * Return - nothing
+ * Return : nothing
  */
 
 void print_times_table(int n)
@@ -30,6 +30,6 @@ void print_times_table(int n)
 			_putchar('0' + mult);
 		}
 		_putchar('\n');
-		i++;
 	}
+	i++;
 }
