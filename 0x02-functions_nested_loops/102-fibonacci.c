@@ -24,7 +24,7 @@ int main(void)
 		else
 			temp2 = fibn;
 		printf("%lu", fibn);
-		if ( i != 49)
+		if (i != 50)
 			printf(", ");
 	}
 	printf("\n");
