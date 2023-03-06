@@ -26,8 +26,8 @@ int main(void)
 		if ((fibn % 2) == 0)
 		{
 			sum += fibn;
-			printf("%lu\n", sum);
 		}
 	}
+	printf("%lu\n", sum);
 	return (0);
 }
