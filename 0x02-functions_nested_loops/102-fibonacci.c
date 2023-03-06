@@ -9,9 +9,9 @@
 
 int main(void)
 {
-	int i;
-	int fibn;
-	int temp1, temp2;
+	int long i;
+	int long fibn;
+	int long temp1, temp2;
 
 	for (i = 1; i <= 50; i++)
 	{
@@ -23,7 +23,7 @@ int main(void)
 			temp1 = fibn;
 		else
 			temp2 = fibn;
-		printf("%d, ", fibn);
+		printf("%lu, ", fibn);
 	}
 	printf("\n");
 	return (0);
