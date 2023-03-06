@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 
 /**
@@ -5,7 +6,7 @@
  *
  *
  *
- * Return : always  0 (sucsess)
+ * Return: Always  0 (sucsess)
  */
 int main(void)
 {
@@ -17,5 +18,6 @@ int main(void)
 		if (((i % 3) == 0) || ((i % 5) == 0))
 			sum = sum + i;
 	}
+	printf("%d\n", sum);
 	return (0);
 }
