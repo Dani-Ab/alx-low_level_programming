@@ -23,7 +23,9 @@ int main(void)
 			temp1 = fibn;
 		else
 			temp2 = fibn;
-		printf("%lu, ", fibn);
+		printf("%lu", fibn);
+		if ( i != 49)
+			printf(", ");
 	}
 	printf("\n");
 	return (0);
