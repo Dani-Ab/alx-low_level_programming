@@ -13,9 +13,9 @@ unsigned int _strspn(char *s, char *accept)
 	unsigned int count = 0;
 	int i;
 
-	while (*s)
+	while ((*s) && (*s  != ' '))
 	{
-		for (i = 0; ((accept[i]) && (*s  == ' ')); i++)
+		for (i = 0; accept[i]; i++)
 		{
 			if (*s == accept[i])
 			{
