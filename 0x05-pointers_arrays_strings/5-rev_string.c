@@ -21,7 +21,7 @@ void rev_string(char *s)
 	{
 		r = *(s + i);
 		*(s + i) = *(s + j - i - 1);
-		*(s + j - i - 1) = j;
+		*(s + j - i - 1) = r;
 	}	
 	*(s + j++) = '\0';
 }
