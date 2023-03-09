@@ -1,11 +1,10 @@
 #include "main.h"
 
 /**
- * is_palindrome - return 1 if a string is paliidrome
- *
+ * is_palindrome - gives 1 if a string is paliidrome
  * @s: input string
  *
- * Return : 1 if sucesses 0 not
+ * Return: 1 if sucesses 0 not
  */
 
 int is_palindrome(char *s)
