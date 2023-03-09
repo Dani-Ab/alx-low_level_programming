@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * is_prime_number - find if number is prime
  * @n: input number to check
