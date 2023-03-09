@@ -23,7 +23,7 @@ int is_prime_number(int n)
 
 int is_prime_cal(int n, int m)
 {
-	if ((n % m == 0) && (m != (n / 2))
+	if ((n % m == 0) && (m != (n / 2)))
 		return (0);
 	else if (m >= (n / 2))
 		return (1);
