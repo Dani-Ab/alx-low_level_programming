@@ -2,6 +2,7 @@
 #define MAIN_H
 
 #include <stdio.h>
+#include <string.h>
 
 int StrEva(char *s, int i, int c);
 int is_prime_cal(int n, int m);
