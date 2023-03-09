@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 
-int prime_ass(int n, int m)
+int prime_cal (int n, int m)
 int _sqrt_ass(int n, int i);
 void _puts_recursion(char *s);
 void _print_rev_recursion(char *s);
