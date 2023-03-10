@@ -1,5 +1,5 @@
-#include "main.h"
 #include <ctype.h>
+#include "main.h"
 
 /**
  * _isupper - check the inputes if its uppercase character or note.
