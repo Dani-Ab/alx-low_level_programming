@@ -22,12 +22,12 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	while (s1[i] != '\0')
 	{
-		ptr[i] = *(s1 + i);
+		ptr[i] = s1[i];
 		i++;
 	}
 	while (s2[n] != '\0')
 	{
-		ptr[i] = *(s2 + n);
+		ptr[i] = s2[n];
 		i++;
 		n++;
 	}
