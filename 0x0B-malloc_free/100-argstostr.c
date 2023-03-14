@@ -11,7 +11,7 @@
 
 char *argstostr(int ac, char **av)
 {
-	unsigned int i = 0, j = 0, n = 0, m = 0, size = 0;
+	int i = 0, j = 0, n = 0, m = 0, size = 0;
 	char *ptr;
 
 	if ((ac == 0) || (av == NULL))
