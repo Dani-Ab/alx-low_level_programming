@@ -25,10 +25,10 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	for (i = 1; i <= n; i++)
 	{
 		num = va_arg(args, int);
-		if (i == n)
-			printf("%d\n", num);
-		else
-			printf("%d%s", num, separator);
+		printf("%d", num);
+		if ((i < n) && (separator != NULL))
+			printf("%s", separator);
 	}
+	printf("\n");
 	va_end(args);
 }
