@@ -5,14 +5,14 @@
  * @head: node pointer
  * @str: a string pointer
  *
- * Return: 1 for sucssess
+ * Return: new node address for success null for failure
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
 	unsigned int len = 0;
 	list_t *new, *temp;
 
-	while (str)
+	while (str[len])
 		len++;
 	new = malloc(sizeof(list_t));
 	temp = *head;
@@ -21,8 +21,6 @@ list_t *add_node_end(list_t **head, const char *str)
 	new->str = strdup(str);
 	new->len = len;
 	new->next = NULL;
-	while (str)
-		len++;
 	if (temp != NULL)
 	{
 		while (temp->next != NULL)
