@@ -9,7 +9,8 @@
 
 void print_binary(unsigned long int n)
 {
-	unsigned long int mask = 4294967296;
+	unsigned long int mask = 8589934592;
+	/*2147483648//4294967296;*/
 	int i = 0;
 
 	if (n == 0)
