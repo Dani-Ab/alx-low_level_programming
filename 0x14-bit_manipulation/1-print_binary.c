@@ -12,6 +12,8 @@ void print_binary(unsigned long int n)
 	unsigned long int mask = 4294967296;
 	int i = 0;
 
+	if (n == 0)
+		_putchar('0');
 	while (mask > 0)
 	{
 		if ((mask & n) == 0)
