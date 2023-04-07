@@ -7,6 +7,7 @@
 
 unsigned int binary_to_uint(const char *b);
 int stlen(const char *str);
+void print_binary(unsigned long int n);
 int _putchar(char c);
 
 #endif /* MAIN_H */
