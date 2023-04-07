@@ -9,7 +9,7 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int sum, n = 0, slen = 0, i = 0;
+	unsigned int sum = 0, n = 0, slen = 0, i = 0;
 
 	slen = stlen(b);
 	n = slen - 1;
@@ -17,25 +17,28 @@ unsigned int binary_to_uint(const char *b)
 		return (0);
 	while (i < slen)
 	{
-		if ((b[n] != 48) && (b[n] != 49))
+		if ((b[n] == 48) || (b[n] == 49))
+		{
+			if (b[n] == 49)
+				sum += 1 << i;
+			i++;
+			n--;
+		}
+		else
 			return (0);
-		if (b[n] == 49)
-			sum += 1 << i;
-		i++;
-		n--;
 	}
 	return (sum);
 }
 /**
  * stlen- calculate string length
- * @bistr: input string
+ * @str: input string
  *
  * Return: string length
  */
 
 int stlen(const char *str)
 {
-	int count, i =0;
+	int count, i = 0;
 
 	for (count = 0; str[i] != '\0'; i++)
 	{
