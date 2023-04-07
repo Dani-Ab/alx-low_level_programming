@@ -19,7 +19,7 @@ int get_bit(unsigned long int n, unsigned int index)
 		m >>= 1;
 	}
 	if (!n)
-		return (0);
+		return (-1);
 	num |= 1ul << index;
 	num &= n;
 	num = num >> index;
