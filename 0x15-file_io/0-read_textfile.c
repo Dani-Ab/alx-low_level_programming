@@ -9,14 +9,14 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	size_t file_op, file_rd;
+	int file_op, file_rd;
 	char *num_leng;
 
 	num_leng = malloc(sizeof(char) * letters);
 	file_op = open("filename", O_RDONLY);
 	if (num_leng == NULL || filename == NULL)
 		return (0);
-	if (file_op < 0)
+	if (file_op == -1)
 		return (0);
 	file_rd = read(file_op, num_leng, letters);
 	write(STDOUT_FILENO, num_leng, file_rd);
