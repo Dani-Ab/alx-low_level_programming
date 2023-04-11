@@ -9,19 +9,21 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int file_op, file_rd;
-	char *num_leng;
+	int fdop, fdrd, fdwr;
+	char *txt_ptr;
 
-	num_leng = malloc(sizeof(char *) * letters);
-	file_op = open("filename", O_RDONLY);
-	if (num_leng == NULL || filename == NULL)
+	txt_ptr = malloc(sizeof(char *) * letters);
+	fdop = open("filename", O_RDONLY);
+	if (txt_ptr == NULL || filename == NULL)
 		return (0);
-	if (file_op == -1)
+	if (fdop == -1)
 		return (0);
-	file_rd = read(file_op, num_leng, letters);
-	write(STDOUT_FILENO, num_leng, file_rd);
+	fdrd = read(fdop, txt_ptr, letters);
+	fdwr = write(STDOUT_FILENO, txt_ptr, fdrd);
 
-	free(num_leng);
-	close(file_op);
-	return (file_rd);
+	if (fdrd == -1 || fdwr == -1)
+		return (0);
+	free(txt_ptr);
+	close(fdop);
+	return (fdrd);
 }
