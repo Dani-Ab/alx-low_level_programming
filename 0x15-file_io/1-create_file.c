@@ -9,20 +9,17 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	int file_cr, file_wr, text_len = 0;
+	int fpcr, fpwr;
 
 	if (filename == NULL)
 		return (-1);
-	text_len = strlen(text_content);
-	file_cr = open("filename", O_RDWR | O_CREAT | O_TRUNC, 0600);
-	if (file_cr == -1)
-		return (-1);
+	fpcr  = open("filename", O_RDWR |  O_CREAT | O_TRUNC, 0600);
 	if (text_content)
 	{
-		file_wr = write(file_cr, text_content, text_len);
-		if (file_wr == -1)
-			return (-1);
+		fpwr = write(fpcr, text_content, strlen(text_content));
 	}
-	close(file_cr);
+	if (fpcr == -1 || fpwr == -1)
+		return (-1);
+	close(fpcr);
 	return (1);
 }
