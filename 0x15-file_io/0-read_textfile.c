@@ -13,7 +13,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	char *txt_ptr;
 
 	txt_ptr = malloc(sizeof(char *) * letters);
-	fdop = open("filename", O_RDONLY);
+	fdop = open("filename", O_RDWR);
 	if (txt_ptr == NULL || filename == NULL)
 		return (0);
 	fdrd = read(fdop, txt_ptr, letters);
