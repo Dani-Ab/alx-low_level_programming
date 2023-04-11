@@ -9,20 +9,15 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fdop, fdrd, fdwr;
+	int fdop, fdrd;
 	char *txt_ptr;
 
 	txt_ptr = malloc(sizeof(char *) * letters);
 	fdop = open("filename", O_RDONLY);
 	if (txt_ptr == NULL || filename == NULL)
 		return (0);
-	if (fdop == -1)
-		return (0);
 	fdrd = read(fdop, txt_ptr, letters);
-	fdwr = write(STDOUT_FILENO, txt_ptr, fdrd);
-
-	if (fdrd == -1 || fdwr == -1)
-		return (0);
+	write(STDOUT_FILENO, txt_ptr, fdrd);
 	free(txt_ptr);
 	close(fdop);
 	return (fdrd);
